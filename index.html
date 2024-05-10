@@ -17,8 +17,7 @@
         }
         @font-face {
             font-family: 'CustomFont';
-            src: url('raleway.regular.ttf') format('tff');
-            /* You may need to specify additional font formats here depending on browser support */
+            src: url('fonts/raleway.regular.ttf') format('truetype'); /* Specify the TTF font format */
         }
         header {
             text-align: center;
@@ -36,18 +35,22 @@
             border-radius: 10px;
             background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
             font-size: 40px !important; /* Increased font size with !important */
+            font-family: 'CustomFont', Arial, sans-serif; /* Apply custom font */
         }
         .button {
-            display: block;
-            margin: 20px auto;
+            display: inline-block;
+            margin-top: 20px; /* Adjust margin top */
             padding: 10px 20px;
             border: none;
-            border-radius: 5px;
-            background-color: #007bff;
+            border-radius: 10px; /* Increased border radius */
+            background-color: rgba(0, 0, 0, 0.5); /* Same background color and opacity as the title */
             color: white;
             font-size: 18px;
-            font-family: 'CustomFont', Arial, sans-serif;
+            font-family: 'CustomFont', Arial, sans-serif; /* Apply custom font */
             text-decoration: none;
+        }
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Darken background color on hover */
         }
     </style>
 </head>
