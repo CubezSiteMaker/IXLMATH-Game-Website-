@@ -8,25 +8,31 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Align items to the top */
+            align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: url('https://example.com/your-image.jpg'); /* Replace 'https://example.com/your-image.jpg' with your image URL */
+            background-image: url('https://images.alphacoders.com/130/thumb-1920-1308162.jpeg'); /* Replace 'https://example.com/your-image.jpg' with your image URL */
             background-size: cover;
             background-position: center;
             border-radius: 50%; /* Make the background round */
             overflow: hidden; /* Hide overflow content */
         }
-        h1 {
-            font-size: 70px;
+        .container {
+            text-align: center;
+            padding: 20px;
             background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
             color: white; /* Text color */
-            padding: 20px; /* Padding around the text */
-            margin-top: 20px; /* Add margin to the top */
+            border-radius: 20px; /* Rounded corners for the container */
+        }
+        h1 {
+            font-size: 70px;
+            margin: 0; /* Remove default margin */
         }
     </style>
 </head>
 <body>
-    <h1>Games</h1>
+    <div class="container">
+        <h1>Games Only</h1>
+    </div>
 </body>
 </html>
