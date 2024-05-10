@@ -8,25 +8,24 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Align items to the top */
             height: 100vh;
             margin: 0;
+            overflow: hidden; /* Hide overflow content */
             background-image: url('https://images.alphacoders.com/130/thumb-1920-1308162.jpeg'); /* Replace 'https://example.com/your-image.jpg' with your image URL */
             background-size: cover;
             background-position: center;
             border-radius: 50%; /* Make the background round */
-            overflow: hidden; /* Hide overflow content */
         }
         .container {
             text-align: center;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
             color: white; /* Text color */
-            border-radius: 20px; /* Rounded corners for the container */
         }
         h1 {
             font-size: 70px;
-            margin: 0; /* Remove default margin */
+            margin: 20px 0 0 0; /* Add margin to the top */
         }
     </style>
 </head>
@@ -36,3 +35,4 @@
     </div>
 </body>
 </html>
+
