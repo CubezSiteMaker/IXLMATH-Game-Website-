@@ -12,27 +12,34 @@
             height: 100vh;
             margin: 0;
             overflow: hidden; /* Hide overflow content */
-            background-image: url('https://images.alphacoders.com/130/thumb-1920-1308162.jpeg'); /* Replace 'https://example.com/your-image.jpg' with your image URL */
+            background-image: url('https://images.alphacoders.com/130/thumb-1920-1308162.jpeg'); /* Replace 'https://example.com/background-image.jpg' with your image URL */
             background-size: cover;
             background-position: center;
-            border-radius: 50%; /* Make the background round */
         }
         .container {
-            text-align: center;
+            text-align: left; /* Align text to the left */
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
             color: white; /* Text color */
+            border-radius: 20px; /* Rounded corners for the container */
         }
         h1 {
             font-size: 70px;
-            margin: 20px 0 0 0; /* Add margin to the top */
+            margin: 0; /* Remove default margin */
+        }
+        .rounded-image {
+            border-radius: 50%; /* Make the image rounded */
+            margin-right: 20px; /* Add margin to the right of the image */
+            width: 150px; /* Set width of the image */
+            height: auto; /* Maintain aspect ratio */
+            float: left; /* Float the image to the left */
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="https://ruslan.rocks/assets/tanuki-sunset.jpeg" alt="Rounded Image" class="rounded-image"> <!-- Replace 'https://example.com/rounded-image.jpg' with your image URL -->
         <h1>Games Only</h1>
     </div>
 </body>
 </html>
-
