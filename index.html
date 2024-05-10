@@ -15,9 +15,6 @@
             background-attachment: fixed; /* Keeps background fixed while scrolling */
             font-family: Arial, sans-serif;
             color: white; /* Set the color of the text */
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
         }
         @font-face {
@@ -29,6 +26,10 @@
             padding: 20px 0;
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
             border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         h1 {
             padding: 20px 40px; /* Increased padding */
@@ -57,6 +58,6 @@
     <header>
         <h1>Cubez Concealed 3</h1>
     </header>
-    <a href="games.html" class="button">Games</a> <!-- Button moved here -->
+    <a href="games/games.html" class="button">Games</a> <!-- Button moved here -->
 </body>
 </html>
