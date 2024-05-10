@@ -8,12 +8,17 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('https://images.alphacoders.com/130/thumb-1920-1308162.jpeg');
+            background-image: url('https://wallpapers.com/images/hd/lo-fi-anime-city-zclvb5ssbq91zbay.jpg');
             background-size: cover; /* Adjusted to cover */
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed; /* Keeps background fixed while scrolling */
             font-family: Arial, sans-serif;
+        }
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('fonts/customfont.woff') format('woff');
+            /* You may need to specify additional font formats here depending on browser support */
         }
         header {
             text-align: center;
@@ -30,13 +35,26 @@
             padding: 20px 40px; /* Increased padding */
             border-radius: 10px;
             background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
-            font-size: 49px !important; /* Increased font size with !important */
+            font-size: 40px !important; /* Increased font size with !important */
+        }
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 18px;
+            font-family: 'CustomFont', Arial, sans-serif;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Cubez Concealed 3</h1>
+        <a href="games.html" class="button">Games</a>
     </header>
 </body>
 </html>
