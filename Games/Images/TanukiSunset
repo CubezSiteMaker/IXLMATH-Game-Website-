@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        .rounded-square {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Game page -->
+    <div id="games-page">
+        <img src="https://ruslan.rocks/assets/tanuki-sunset.jpeg" alt="Game Image" class="rounded-square">
+    </div>
+
+    <!-- Index page -->
+    <div id="index-page" class="hidden">
+        <!-- Content of your index.html goes here -->
+    </div>
+
+    <script>
+        // Check if the current URL contains 'games.html'
+        if (window.location.href.includes('games.html')) {
+            // Show the games page
+            document.getElementById('games-page').style.display = 'block';
+            // Hide the index page
+            document.getElementById('index-page').style.display = 'none';
+        } else {
+            // Hide the games page
+            document.getElementById('games-page').style.display = 'none';
+            // Show the index page
+            document.getElementById('index-page').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
 
